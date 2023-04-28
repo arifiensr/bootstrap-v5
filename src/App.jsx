@@ -1,3 +1,4 @@
+import IntroSection from './components/IntroSection'
 import Navbar from './components/Navbar'
 import BootstrapThemeKit from './pages/BootstrapThemeKit'
 
@@ -6,6 +7,7 @@ function App() {
     <>
       {/* <BootstrapThemeKit /> */}
       <Navbar />
+      <IntroSection />
     </>
   )
 }

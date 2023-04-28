@@ -9,8 +9,69 @@
   <body>
     <div id="root"></div>
 
-    <!-- Bootstrap JS --><!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+    <!-- Simple image -->
+    <a href="large.jpg" class="glightbox">
+      <img src="small.jpg" alt="image" />
+    </a>
+
+    <!-- Video -->
+    <a href="https://vimeo.com/115041822" class="glightbox2">
+      <img src="small.jpg" alt="image" />
+    </a>
+
+    <!-- Gallery -->
+    <a href="large.jpg" class="glightbox3" data-gallery="gallery1">
+      <img src="small.jpg" alt="image" />
+    </a>
+    <a href="video.mp4" class="glightbox3" data-gallery="gallery1">
+      <img src="small.jpg" alt="image" />
+    </a>
+
+    <!-- Simple Description -->
+    <a href="large.jpg" class="glightbox4" data-glightbox="title: My title; description: this is the slide description">
+      <img src="small.jpg" alt="image" />
+    </a>
+
+    <!-- Advanced Description -->
+    <a href="large.jpg" class="glightbox5" data-glightbox="title: My title; description: .custom-desc1">
+      <img src="small.jpg" alt="image" />
+    </a>
+
+    <div class="glightbox-desc custom-desc1">
+      <p>The content of this div will be used as the slide description</p>
+      <p>You can add links and any HTML you want</p>
+    </div>
+
+    <!-- URL with no extension -->
+    <a href="https://picsum.photos/1200/800" data-glightbox="type: image">
+      <img src="small.jpg" alt="image" />
+    </a>
+    <!-- OR using multiple data attributes -->
+    <a href="https://picsum.photos/1200/800" data-type="image">
+      <img src="small.jpg" alt="image" />
+    </a>
+
+    <!-- Using responsive images: specify sizes and srcset through data attributes in the
+     same way you would with the img tag.
+     See: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+    <a href="deafult.jpg" class="glightbox6" data-title="Responsive example" data-description="Your browser will choose the optimal image for the resolution" data-sizes="(max-width: 600px) 480px, 800px" data-srcset="img480.jpx 480w img800.jpg 800w">
+      <img src="small.jpg" alt="image" />
+    </a>
+
+    <!-- Bootstrap JS -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- gLightbox JS -->
+    <script src="/src/assets/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        // href: 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+        // type: 'video',
+        // source: 'youtube', //vimeo, youtube or local
+        // width: 900,
+      })
+    </script>
 
     <!-- Main JS -->
     <script type="module" src="/src/main.jsx"></script>
