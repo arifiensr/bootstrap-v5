@@ -1,5 +1,7 @@
+import Companies from './components/Companies'
 import IntroSection from './components/IntroSection'
 import Navbar from './components/Navbar'
+import Services from './components/Services'
 import BootstrapThemeKit from './pages/BootstrapThemeKit'
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
       {/* <BootstrapThemeKit /> */}
       <Navbar />
       <IntroSection />
+      <Companies />
+      <Services />
     </>
   )
 }

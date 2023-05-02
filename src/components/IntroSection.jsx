@@ -1,15 +1,18 @@
 import { useEffect } from 'react'
 import introIllustrationImage from '../assets/images/arts/intro-section-illustration.png'
-// import GLightbox from 'glightbox'
+import GLightbox from 'glightbox'
 
 export default function IntroSection() {
   useEffect(() => {
-    // const lightbox = GLightbox({
-    //   href: 'https://www.youtube.com/watch?v=J9lS14nM1xg',
-    //   type: 'video',
-    //   source: 'youtube', //vimeo, youtube or local
-    //   width: 900,
-    // })
+    const lightbox = GLightbox({
+      href: 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+      type: 'video',
+      source: 'youtube', //vimeo, youtube or local
+      width: 900,
+      autoplayVideos: true,
+      openEffect: 'zoom', // zoom, fade, none
+      closeEffect: 'zoom', // zoom, fade, none
+    })
   }, [])
 
   return (
@@ -34,7 +37,7 @@ export default function IntroSection() {
             <div className="col-md-6 intros text-end">
               <div className="video-box">
                 <img src={introIllustrationImage} alt="video illustration" className="img-fluid" />
-                <a href="#" className="position-absolute top-50 start-50 translate-middle">
+                <a href="#" className="glightbox position-absolute top-50 start-50 translate-middle">
                   <span>
                     <i className="bx bx-play-circle"></i>
                   </span>
