@@ -2,6 +2,7 @@ import Companies from './components/Companies'
 import Faq from './components/Faq'
 import IntroSection from './components/IntroSection'
 import Navbar from './components/Navbar'
+import Portfolio from './components/Portfolio'
 import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import BootstrapThemeKit from './pages/BootstrapThemeKit'
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Testimonials />
       <Faq />
+      <Portfolio />
     </>
   )
 }
