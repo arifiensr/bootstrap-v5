@@ -9,13 +9,11 @@ export default function Services() {
         <div className="container">
           <div className="row text-center">
             <h1 className="display-3 fw-bold">Our Services</h1>
-            <div className="heading-line mb-5"></div>
+            <div className="heading-line mb-1"></div>
           </div>
-        </div>
 
         {/* Description Content Start */}
-        <div className="container">
-          <div className="row pt-2 pb-2 mt-5 mb-3">
+          <div className="row pt-2 pb-2 mt-0 mb-3">
             <div className="col-md-6 border-right">
               <div className="bg-white p-3">
                 <h2 className="fw-bold text-capitalize text-center">Our Services Range From Initial Design To Deployment Anywhere Anytime</h2>
@@ -53,7 +51,7 @@ export default function Services() {
             </div>
           </div>
           {/* Web Development Content Start */}
-          <div className="row">
+          <div className="row web-dev-row">
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
               <div className="services__pic">
               <img src={serviceImage2} alt="web development illustration" className="img-fluid" />
