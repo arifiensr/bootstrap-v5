@@ -1,6 +1,7 @@
 import Companies from './components/Companies'
 import Contact from './components/Contact'
 import Faq from './components/Faq'
+import Footer from './components/Footer'
 import IntroSection from './components/IntroSection'
 import Navbar from './components/Navbar'
 import Portfolio from './components/Portfolio'
@@ -20,6 +21,7 @@ function App() {
       <Faq />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   )
 }
